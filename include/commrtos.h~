@@ -1,0 +1,71 @@
+/*
+*********************************************************************************************************
+*                                     Embedded Systems Building Blocks
+*                                  Complete and Ready-to-Use Modules in C
+*
+*                                    Asynchronous Serial Communications
+*                                           Buffered Serial I/O 
+*                                                 (RTOS)
+*
+*                            (c) Copyright 1999, Jean J. Labrosse, Weston, FL
+*                                           All Rights Reserved
+*
+* Filename   : COMMRTOS.H
+* Programmer : Jean J. Labrosse
+*********************************************************************************************************
+*/
+
+/*
+*********************************************************************************************************
+*                                       CONFIGURATION CONSTANTS
+*********************************************************************************************************
+*/
+#ifndef COMMRTOS_H
+#define COMMRTOS_H
+
+#define COMM_RX_BUF_SIZE 256                /* Number of characters in Rx ring buffer             */
+#define COMM_TX_BUF_SIZE 256                /* Number of characters in Tx ring buffer             */
+
+/*
+*********************************************************************************************************
+*                                               CONSTANTS
+*********************************************************************************************************
+*/
+
+#ifndef  NUL
+#define  NUL 0x00
+#endif
+
+#define COMM1 1
+#define COMM2 2
+
+                                                 /* ERROR CODES                                        */
+#define COMM_NO_ERR 0                /* Function call was successful                       */
+#define COMM_BAD_CH 1                /* Invalid communications port channel                */
+#define COMM_RX_EMPTY 2                /* Rx buffer is empty, no character available         */
+#define COMM_TX_FULL 3                /* Tx buffer is full, could not deposit character     */
+#define COMM_TX_EMPTY 4                /* If the Tx buffer is empty.                         */
+#define COMM_RX_TIMEOUT 5                /* If a timeout occurred while waiting for a character*/
+#define COMM_TX_TIMEOUT 6                /* If a timeout occurred while waiting to send a char.*/
+
+
+#define COMM_PARITY_NONE 0                /* Defines for setting parity                         */
+#define COMM_PARITY_ODD 1
+#define COMM_PARITY_EVEN 2
+
+/*
+*********************************************************************************************************
+*                                          FUNCTION PROTOTYPES
+*********************************************************************************************************
+*/
+
+
+unsigned char CommGetChar(unsigned char ch, unsigned short int to, unsigned char *err);
+unsigned char CommGetTxChar(unsigned char ch, unsigned char *err);
+void CommInit(void);
+unsigned char CommIsEmpty(unsigned char ch);
+unsigned char CommIsFull(unsigned char ch);
+unsigned char CommPutChar(unsigned char ch, unsigned char c, unsigned short int to);
+void CommPutRxChar(unsigned char ch, unsigned char c);
+#endif /*COMMRTOS_H*/
+

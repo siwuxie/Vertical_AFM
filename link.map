@@ -1,0 +1,1049 @@
+Archive member included because of file (symbol)
+
+ucos_ii.a(init_8253.o)        test.o (PC_SetTick)
+ucos_ii.a(init_8259.o)        test.o (PC_EnableIRQ)
+ucos_ii.a(init_idt.o)         test.o (PC_IRQ2INT)
+ucos_ii.a(Init_CPU.o)         ucos_ii.a(init_idt.o) (code_selector)
+ucos_ii.a(textMode.o)         display.o (PC_initTextMode)
+ucos_ii.a(io.o)               ucos_ii.a(init_idt.o) (ISR_PIC1)
+ucos_ii.a(comm_pc.o)          commTask.o (CommCfgPort)
+ucos_ii.a(comm_pca.o)         ucos_ii.a(comm_pc.o) (Comm1ISR)
+ucos_ii.a(commrtos.o)         commTask.o (CommGetChar)
+ucos_ii.a(i8042_keyboard.o)   keyboardTask.o (i8042_getc)
+ucos_ii.a(keyboardasm.o)      ucos_ii.a(i8042_keyboard.o) (KeyboardISR)
+ucos_ii.a(os_cpu_a.o)         test.o (OSCtxSw)
+ucos_ii.a(ucos_core.o)        test.o (OSInit)
+ucos_ii.a(ucos_dbg.o)         ucos_ii.a(ucos_core.o) (OSDebugInit)
+ucos_ii.a(ucos_flag.o)        ucos_ii.a(ucos_core.o) (OS_FlagInit)
+ucos_ii.a(ucos_mbox.o)        test.o (OSMboxCreate)
+ucos_ii.a(ucos_mem.o)         ucos_ii.a(ucos_core.o) (OS_MemInit)
+ucos_ii.a(ucos_q.o)           ucos_ii.a(ucos_core.o) (OS_QInit)
+ucos_ii.a(ucos_sem.o)         ucos_ii.a(commrtos.o) (OSSemCreate)
+ucos_ii.a(ucos_task.o)        test.o (OSTaskCreate)
+ucos_ii.a(ucos_time.o)        test.o (OSTimeDly)
+ucos_ii.a(ucos_tmr.o)         ucos_ii.a(ucos_core.o) (OSTmr_Init)
+ucos_ii.a(memcpy.o)           ucos_ii.a(textMode.o) (memcpy)
+ucos_ii.a(strcpy.o)           ucos_ii.a(textMode.o) (strcpy)
+ucos_ii.a(multiboot_info.o)   ucos_ii.a(Init_CPU.o) (multiboot_info)
+ucos_ii.a(os_cpu_c.o)         ucos_ii.a(ucos_core.o) (OSInitHookBegin)
+
+Allocating common symbols
+Common symbol       size              file
+
+OSTickDOSCtr        0x1               ucos_ii.a(os_cpu_c.o)
+OSTmrFreeList       0x4               ucos_ii.a(ucos_core.o)
+errorRetraceBuf     0x400             scanTask.o
+OSTmrWheelTbl       0x40              ucos_ii.a(ucos_core.o)
+OSLockNesting       0x1               ucos_ii.a(ucos_core.o)
+OSTmrSemSignal      0x4               ucos_ii.a(ucos_core.o)
+Comm2Buf            0x220             ucos_ii.a(commrtos.o)
+OSRunning           0x1               ucos_ii.a(ucos_core.o)
+MboxPIDStepResponse
+                    0x4               test.o
+keyboard_buf        0x30              ucos_ii.a(i8042_keyboard.o)
+OSIdleCtr           0x4               ucos_ii.a(ucos_core.o)
+OSTmrUsed           0x2               ucos_ii.a(ucos_core.o)
+traceBuf            0x400             scanTask.o
+OSPrioHighRdy       0x1               ucos_ii.a(ucos_core.o)
+TaskCommStk         0x1000            commTask.o
+OSFlagTbl           0x8c              ucos_ii.a(ucos_core.o)
+pBuf                0x4               scanTask.o
+OSTmrTbl            0x340             ucos_ii.a(ucos_core.o)
+hcrc_y              0x800             scanTask.o
+OSPrioCur           0x1               ucos_ii.a(ucos_core.o)
+OSTCBList           0x4               ucos_ii.a(ucos_core.o)
+errorBuf            0x80000           scanTask.o
+MboxLineScan        0x4               test.o
+OSMemTbl            0xb4              ucos_ii.a(ucos_core.o)
+OSTaskStatStk       0x200             ucos_ii.a(ucos_core.o)
+TaskForceCurveStk   0x1000            test.o
+OSCtxSwCtr          0x4               ucos_ii.a(ucos_core.o)
+MboxNormalScan      0x4               test.o
+TaskScannerResponseStk
+                    0x1000            test.o
+currentTask         0x4               keyboardTask.o
+hctc_x              0x800             scanTask.o
+stack               0x4000            boot.o
+MboxCloseLoop       0x4               closeLoop.o
+TaskNormalScanStk   0x1000            test.o
+OSTmrFree           0x2               ucos_ii.a(ucos_core.o)
+OSIdleCtrMax        0x4               ucos_ii.a(ucos_core.o)
+OSTCBFreeList       0x4               ucos_ii.a(ucos_core.o)
+hctc_y              0x800             scanTask.o
+OSCPUUsage          0x1               ucos_ii.a(ucos_core.o)
+zBuf                0x80000           scanTask.o
+MboxMotor           0x4               test.o
+OSTaskCtr           0x1               ucos_ii.a(ucos_core.o)
+hcrc_x              0x800             scanTask.o
+OSMemFreeList       0x4               ucos_ii.a(ucos_core.o)
+TaskMotorStk        0x1000            test.o
+OSQTbl              0x60              ucos_ii.a(ucos_core.o)
+OSTCBHighRdy        0x4               ucos_ii.a(ucos_core.o)
+OSQFreeList         0x4               ucos_ii.a(ucos_core.o)
+OSRdyGrp            0x1               ucos_ii.a(ucos_core.o)
+MboxScannerResponse
+                    0x4               test.o
+OSRdyTbl            0x8               ucos_ii.a(ucos_core.o)
+errorTraceBuf       0x400             scanTask.o
+TaskUpdateDispStk   0x1000            test.o
+TaskFreqScanStk     0x1000            test.o
+pidDiff             0x4               closeLoop.o
+OSTmrTaskStk        0x200             ucos_ii.a(ucos_core.o)
+TaskLineScanStk     0x1000            test.o
+TaskStepResponseStk
+                    0x1000            test.o
+OSEventFreeList     0x4               ucos_ii.a(ucos_core.o)
+Comm1Buf            0x220             ucos_ii.a(commrtos.o)
+OSIntNesting        0x1               ucos_ii.a(ucos_core.o)
+MboxFreqScan        0x4               test.o
+TaskStartStk        0x1000            test.o
+OSTCBCur            0x4               ucos_ii.a(ucos_core.o)
+OSTmrTime           0x4               ucos_ii.a(ucos_core.o)
+OSTime              0x4               ucos_ii.a(ucos_core.o)
+OSTmrSem            0x4               ucos_ii.a(ucos_core.o)
+OSTaskIdleStk       0x200             ucos_ii.a(ucos_core.o)
+OSEventTbl          0x2d0             ucos_ii.a(ucos_core.o)
+OSTCBTbl            0xb00             ucos_ii.a(ucos_core.o)
+pidChannel          0x1               closeLoop.o
+OSFlagFreeList      0x4               ucos_ii.a(ucos_core.o)
+OSStatRdy           0x1               ucos_ii.a(ucos_core.o)
+OSTCBPrioTbl        0x100             ucos_ii.a(ucos_core.o)
+retraceBuf          0x400             scanTask.o
+MboxForceCurve      0x4               test.o
+OSIdleCtrRun        0x4               ucos_ii.a(ucos_core.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .text set to 0x100000
+LOAD boot.o
+LOAD test.o
+LOAD motorTask.o
+LOAD pm511p_IO.o
+LOAD keyboardTask.o
+LOAD pm511p.o
+LOAD closeLoop.o
+LOAD display.o
+LOAD closeLoopISR.o
+LOAD scanTask.o
+LOAD commTask.o
+LOAD freqScanTask.o
+LOAD dds_da.o
+LOAD stepResponseTask.o
+LOAD forceCurveTask.o
+LOAD scannerResponseTask.o
+LOAD ucos_ii.a
+                0x08048000                PROVIDE (__executable_start, 0x8048000)
+                0x08048074                . = (0x8048000 + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.dyn        0x08048074        0x0
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x00000000        0x0 boot.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(.init)
+
+.plt
+ *(.plt)
+
+.text           0x00100000     0xc01b
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00100000       0x22 boot.o
+                0x00100000                _start
+                0x00100000                start
+ *fill*         0x00100022        0x2 90909090
+ .text          0x00100024      0x281 test.o
+                0x00100024                main
+                0x0010028b                TaskUpdateDisp
+                0x0010006c                TaskStart
+ *fill*         0x001002a5        0x3 90909090
+ .text          0x001002a8      0x1cc motorTask.o
+                0x001002a8                MeetMotorStopCondition
+                0x001002c9                setMotorCommand
+                0x001002ff                motorTask
+ .text          0x00100474      0x14c pm511p_IO.o
+                0x0010053f                MotorRetreatOneStep
+                0x001004be                MotorApproachOneStep
+                0x00100474                MotorSleep
+ .text          0x001005c0      0x1d5 keyboardTask.o
+                0x00100690                keyboardTask
+ *fill*         0x00100795        0x3 90909090
+ .text          0x00100798      0x248 pm511p.o
+                0x00100990                initPm511p
+                0x0010082e                AD_startTimer
+                0x0010089b                write_DA
+                0x00100842                AD_stopTimer
+                0x0010091d                read_AD
+                0x00100798                AD_setTimer
+ .text          0x001009e0      0x733 closeLoop.o
+                0x001009e0                PidISRHandler0
+                0x001010f5                enablePID
+                0x0010101a                setPIDParaOther
+                0x00100fe2                setPIDPara
+                0x00100e06                PidISRHandler
+                0x00100b61                PidISRHandler1
+                0x00101104                disablePID
+                0x00100c77                PidISRHandler5
+                0x001010dd                setPIDSetPoint
+                0x0010108a                setPIDChannel
+                0x001010d3                getPIDChannel
+                0x00101057                setScanDelay
+ *fill*         0x00101113        0x1 90909090
+ .text          0x00101114      0x80e display.o
+                0x0010172e                UpdateScanParaDisp
+                0x0010181c                UpdateSystemDisp
+                0x00101686                UpdateHYDisp
+                0x00101424                DispPIDInit
+                0x001011ad                DispInit
+                0x00101577                DispHyParaInit
+                0x0010187b                UpdateStatusDisp
+                0x001014ea                DispScanParaInit
+                0x001015de                UpdatePIDDisp
+ *fill*         0x00101922        0xe 90909090
+ .text          0x00101930       0x28 closeLoopISR.o
+                0x00101930                CloseLoopISR
+ .text          0x00101958     0x1a1b scanTask.o
+                0x0010208f                lineScanTask
+                0x00101958                computeSinCos
+                0x00101f7c                hyCompute
+                0x00101ae5                setScanRange
+                0x00101bfe                setHysteresisParaX
+                0x001026f7                setScanChannel
+                0x00102f66                autoZoom
+                0x00101a7c                setScanPixel
+                0x00101cb8                setHysteresisParaY
+                0x00102723                normalScanTask
+ *fill*         0x00103373        0x1 90909090
+ .text          0x00103374      0x593 commTask.o
+                0x001033f8                commTask
+                0x00103374                InstallCommTask
+ *fill*         0x00103907        0x1 90909090
+ .text          0x00103908      0x1de freqScanTask.o
+                0x0010391d                setFreqChannel
+                0x00103908                setFreqRange
+                0x0010395c                freqScanTask
+                0x00103944                setFreqDelay
+ *fill*         0x00103ae6        0x2 90909090
+ .text          0x00103ae8      0x1fa dds_da.o
+                0x00103b9d                DDSSleep
+                0x00103c8d                ledOff
+                0x00103bcd                DDSWakeup
+                0x00103ae8                dds_Out
+                0x00103c2d                DAWakeup
+                0x00103bfd                DASleep
+                0x00103cbd                GpioOut
+                0x00103c5d                ledOn
+                0x00103b78                setDDSAmplitude
+ *fill*         0x00103ce2        0x2 90909090
+ .text          0x00103ce4      0x2cb stepResponseTask.o
+                0x00103d18                stepResponseTask
+                0x00103ce4                setDeltaSetPoint
+ *fill*         0x00103faf        0x1 90909090
+ .text          0x00103fb0      0x460 forceCurveTask.o
+                0x00103fb0                setForceCurvePara
+                0x00104033                forceCurveTask
+ .text          0x00104410      0x264 scannerResponseTask.o
+                0x00104410                setDeltaZ
+                0x00104444                scannerResponseTask
+ .text          0x00104674      0x10b ucos_ii.a(init_8253.o)
+                0x00104713                PC_SetTick
+                0x00104690                Init8253
+ *fill*         0x0010477f        0x1 90909090
+ .text          0x00104780      0x192 ucos_ii.a(init_8259.o)
+                0x00104870                PC_EnableIRQ
+                0x00104780                Init8259
+ *fill*         0x00104912        0x2 90909090
+ .text          0x00104914      0x37a ucos_ii.a(init_idt.o)
+                0x00104b7d                PC_SetISR
+                0x00104baf                Init_IDT
+                0x00104b46                PC_GetISR
+                0x00104b39                PC_IRQ2INT
+ *fill*         0x00104c8e        0x2 90909090
+ .text          0x00104c90       0x3d ucos_ii.a(Init_CPU.o)
+                0x00104c90                Init_CPU
+ *fill*         0x00104ccd        0x3 90909090
+ .text          0x00104cd0     0x11c3 ucos_ii.a(textMode.o)
+                0x001057be                putchar
+                0x00104eb8                PC_Disp_ClrScr
+                0x00105951                printf
+                0x00105219                PC_WindowSetCursor
+                0x001050bd                PC_WindowInit
+                0x00105864                puts
+                0x0010534b                PC_WindowPutStr
+                0x0010523f                PC_WindowPutChar
+                0x00105013                PC_Disp_ClrRow
+                0x00105e7e                os_sprintf
+                0x00104fbb                PC_Disp_ClrCol
+                0x00104f84                PC_DispPutCharAt
+                0x001051a3                PC_WindowErase
+                0x001051fe                PC_WindowSelect
+                0x00104f15                PC_DispChar
+                0x00104e37                PC_DispSetCur
+                0x00104cd0                PC_initTextMode
+                0x00105068                PC_DispStr
+ *fill*         0x00105e93        0xd 90909090
+ .text          0x00105ea0       0x51 ucos_ii.a(io.o)
+                0x00105ed5                inportb
+                0x00105edf                outportb
+                0x00105ecc                ISR_PIC2
+                0x00105ec5                ISR_PIC1
+                0x00105ea0                PC_ResetCursor
+ *fill*         0x00105ef1        0x3 90909090
+ .text          0x00105ef4      0xafa ucos_ii.a(comm_pc.o)
+                0x00106531                CommRxIntDis
+                0x00106876                CommTxIntDis
+                0x00106307                CommISRHandler16550
+                0x001065f3                CommRxIntEn
+                0x001064c9                CommRxFlush
+                0x001067e3                CommRclIntVect
+                0x0010618d                CommISRHandler
+                0x0010605c                CommTest16550Compatible
+                0x001066a9                CommSetIntVect16550Mode
+                0x00106115                CommSetFIFO
+                0x00106938                CommTxIntEn
+                0x00106746                CommSetIntVect
+                0x00105ef4                CommCfgPort
+ *fill*         0x001069ee        0x2 90909090
+ .text          0x001069f0       0xbc ucos_ii.a(comm_pca.o)
+                0x00106a4e                Comm2ISR
+                0x00106a1f                Comm1ISR16550
+                0x00106a7d                Comm2ISR16550
+                0x001069f0                Comm1ISR
+ .text          0x00106aac      0x59c ucos_ii.a(commrtos.o)
+                0x00106e22                CommPutChar
+                0x00106b75                CommGetTxChar
+                0x00106ffd                CommPutShort
+                0x00106aac                CommGetChar
+                0x00106c51                CommInit
+                0x00106fb5                CommWrite
+                0x00106d67                CommIsEmpty
+                0x00106dc2                CommIsFull
+                0x00106f1e                CommPutRxChar
+ .text          0x00107048      0x672 ucos_ii.a(i8042_keyboard.o)
+                0x00107048                keyboard_handler
+                0x001070cd                i8042_kbd_init
+                0x00107167                PC_Reboot
+                0x00107333                i8042_getc
+ *fill*         0x001076ba        0x6 90909090
+ .text          0x001076c0       0x3c ucos_ii.a(keyboardasm.o)
+                0x001076c0                KeyboardISR
+ *fill*         0x001076fc        0x4 90909090
+ .text          0x00107700       0xa0 ucos_ii.a(os_cpu_a.o)
+                0x00107700                OSStartHighRdy
+                0x00107716                OSCtxSw
+                0x0010773c                OSIntCtxSw
+                0x0010775f                OSTickISR
+ .text          0x001077a0      0xcff ucos_ii.a(ucos_core.o)
+                0x00107893                OSIntEnter
+                0x001082aa                OS_TCBInit
+                0x001077a0                OSEventNameGet
+                0x001078b5                OSIntExit
+                0x0010803b                OS_MemCopy
+                0x00108067                OS_Sched
+                0x00108172                OS_TaskStat
+                0x00108016                OS_MemClr
+                0x00107b34                OS_EventTaskRdy
+                0x00107962                OSSchedUnlock
+                0x001079ed                OSStatInit
+                0x00107b2f                OS_Dummy
+                0x001077ec                OSEventNameSet
+                0x00107c53                OS_EventTaskWait
+                0x0010823c                OS_TaskStatStkChk
+                0x001079aa                OSStart
+                0x00107a30                OSTimeTick
+                0x00107934                OSSchedLock
+                0x00108104                OS_StrCopy
+                0x0010784a                OSInit
+                0x00107cfe                OS_EventTO
+                0x00108137                OS_StrLen
+                0x00107b25                OSVersion
+                0x00107d80                OS_EventWaitListInit
+                0x00108157                OS_TaskIdle
+ *fill*         0x0010849f        0x1 90909090
+ .text          0x001084a0      0x151 ucos_ii.a(ucos_dbg.o)
+                0x001084a0                OSDebugInit
+ *fill*         0x001085f1        0x3 90909090
+ .text          0x001085f4      0xcd0 ucos_ii.a(ucos_flag.o)
+                0x00108d8f                OSFlagPendGetFlagsRdy
+                0x001085f4                OSFlagAccept
+                0x00109257                OS_FlagUnlink
+                0x0010912b                OS_FlagInit
+                0x00108fde                OSFlagQuery
+                0x00108daa                OSFlagPost
+                0x00108795                OSFlagCreate
+                0x0010881a                OSFlagDel
+                0x00108a11                OSFlagPend
+                0x001089b9                OSFlagNameSet
+                0x00108971                OSFlagNameGet
+ .text          0x001092c4      0x4a2 ucos_ii.a(ucos_mbox.o)
+                0x001096fd                OSMboxQuery
+                0x001095f5                OSMboxPost
+                0x001092fd                OSMboxCreate
+                0x001094c2                OSMboxPend
+                0x001092c4                OSMboxAccept
+                0x00109659                OSMboxPostOpt
+                0x0010937b                OSMboxDel
+ *fill*         0x00109766        0x2 90909090
+ .text          0x00109768      0x2b0 ucos_ii.a(ucos_mem.o)
+                0x0010998f                OS_MemInit
+                0x00109879                OSMemNameGet
+                0x00109822                OSMemGet
+                0x001098eb                OSMemPut
+                0x00109768                OSMemCreate
+                0x00109937                OSMemQuery
+                0x001098a5                OSMemNameSet
+ .text          0x00109a18      0x857 ucos_ii.a(ucos_q.o)
+                0x00109d3f                OSQFlush
+                0x00109a18                OSQAccept
+                0x00109ecb                OSQPost
+                0x00109d76                OSQPend
+                0x00109f7b                OSQPostFront
+                0x00109aaf                OSQCreate
+                0x0010a031                OSQPostOpt
+                0x00109bb9                OSQDel
+                0x0010a210                OS_QInit
+                0x0010a167                OSQQuery
+ *fill*         0x0010a26f        0x1 90909090
+ .text          0x0010a270      0x430 ucos_ii.a(ucos_sem.o)
+                0x0010a487                OSSemPend
+                0x0010a270                OSSemAccept
+                0x0010a56e                OSSemPost
+                0x0010a2b9                OSSemCreate
+                0x0010a5da                OSSemQuery
+                0x0010a644                OSSemSet
+                0x0010a340                OSSemDel
+ .text          0x0010a6a0      0xa36 ucos_ii.a(ucos_task.o)
+                0x0010a957                OSTaskCreateExt
+                0x0010a8a7                OSTaskCreate
+                0x0010a6a0                OSTaskChangePrio
+                0x0010aa3b                OSTaskDel
+                0x0010ad3d                OSTaskNameSet
+                0x0010ac51                OSTaskDelReq
+                0x0010adc6                OSTaskResume
+                0x0010acc0                OSTaskNameGet
+                0x0010ae8d                OSTaskStkChk
+                0x0010b033                OSTaskQuery
+                0x0010b099                OS_TaskStkClr
+                0x0010af5c                OSTaskSuspend
+ *fill*         0x0010b0d6        0x2 90909090
+ .text          0x0010b0d8      0x2a7 ucos_ii.a(ucos_time.o)
+                0x0010b36f                OSTimeSet
+                0x0010b0d8                OSTimeDly
+                0x0010b156                OSTimeDlyHMSM
+                0x0010b264                OSTimeDlyResume
+                0x0010b359                OSTimeGet
+ *fill*         0x0010b37f        0x1 90909090
+ .text          0x0010b380      0xb46 ucos_ii.a(ucos_tmr.o)
+                0x0010b9c1                OSTmrSignal
+                0x0010b470                OSTmrDel
+                0x0010b5e8                OSTmrRemainGet
+                0x0010b72c                OSTmrStateGet
+                0x0010bac5                OSTmr_Init
+                0x0010b794                OSTmrStart
+                0x0010b86a                OSTmrStop
+                0x0010b380                OSTmrCreate
+                0x0010b542                OSTmrNameGet
+ *fill*         0x0010bec6        0x2 90909090
+ .text          0x0010bec8       0x16 ucos_ii.a(memcpy.o)
+                0x0010bec8                memcpy
+ *fill*         0x0010bede        0x2 90909090
+ .text          0x0010bee0       0x18 ucos_ii.a(strcpy.o)
+                0x0010bee0                strcpy
+ .text          0x0010bef8       0x36 ucos_ii.a(multiboot_info.o)
+                0x0010bef8                multiboot_info
+ *fill*         0x0010bf2e        0x2 90909090
+ .text          0x0010bf30       0xeb ucos_ii.a(os_cpu_c.o)
+                0x0010bf3a                OSTaskCreateHook
+                0x0010bf49                OSTaskStatHook
+                0x0010bf30                OSInitHookBegin
+                0x0010bf3f                OSTaskDelHook
+                0x0010c016                OSTimeTickHook
+                0x0010c011                OSTCBInitHook
+                0x0010bf4e                OSTaskStkInit
+                0x0010bf35                OSInitHookEnd
+                0x0010c00c                OSTaskSwHook
+                0x0010bf44                OSTaskIdleHook
+ *(.gnu.warning)
+
+.fini
+ *(.fini)
+                0x0010c01b                PROVIDE (__etext, .)
+                0x0010c01b                PROVIDE (_etext, .)
+                0x0010c01b                PROVIDE (etext, .)
+
+.rodata         0x0010c020      0xa8e
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0010c020       0x3e motorTask.o
+ *fill*         0x0010c05e        0x2 00
+ .rodata        0x0010c060       0x5c keyboardTask.o
+ .rodata        0x0010c0bc      0x23a display.o
+ *fill*         0x0010c2f6        0x2 00
+ .rodata        0x0010c2f8       0xf8 scanTask.o
+ .rodata        0x0010c3f0      0x190 commTask.o
+ .rodata        0x0010c580       0x23 freqScanTask.o
+ *fill*         0x0010c5a3        0x1 00
+ .rodata        0x0010c5a4       0x10 dds_da.o
+                0x0010c5ae                CONTROL_ADDR
+                0x0010c5aa                FREQ0_MSB
+                0x0010c5ac                DDS_DA_ADDR
+                0x0010c5b0                DA_ADDR
+                0x0010c5a4                clockFreq
+                0x0010c5b2                GPIO_ADDR
+                0x0010c5a8                FREQ0_LSB
+ .rodata        0x0010c5b4       0x34 stepResponseTask.o
+ .rodata        0x0010c5e8       0x9a forceCurveTask.o
+ .rodata        0x0010c682       0x34 scannerResponseTask.o
+ .rodata        0x0010c6b6      0x192 ucos_ii.a(init_idt.o)
+ .rodata        0x0010c848        0x8 ucos_ii.a(textMode.o)
+ .rodata        0x0010c850       0x68 ucos_ii.a(comm_pc.o)
+ .rodata        0x0010c8b8       0x3c ucos_ii.a(i8042_keyboard.o)
+ *fill*         0x0010c8f4        0xc 00
+ .rodata        0x0010c900      0x11c ucos_ii.a(ucos_core.o)
+                0x0010c900                OSUnMapTbl
+ .rodata        0x0010ca1c       0x70 ucos_ii.a(ucos_dbg.o)
+                0x0010ca64                OSTaskNameSize
+                0x0010ca3c                OSMboxEn
+                0x0010ca4c                OSQEn
+                0x0010ca8a                OSDataSize
+                0x0010ca82                OSTmrSize
+                0x0010ca88                OSTmrWheelTblSize
+                0x0010ca2a                OSEventSize
+                0x0010ca68                OSTaskStatStkSize
+                0x0010ca52                OSRdyTblSize
+                0x0010ca36                OSFlagMax
+                0x0010ca70                OSTCBSize
+                0x0010ca56                OSStkWidth
+                0x0010ca4a                OSPtrSize
+                0x0010ca2c                OSEventTblSize
+                0x0010ca4e                OSQMax
+                0x0010ca2e                OSFlagEn
+                0x0010ca74                OSTimeTickHookEn
+                0x0010ca38                OSFlagNameSize
+                0x0010ca50                OSQSize
+                0x0010ca3a                OSLowestPrio
+                0x0010ca80                OSTmrCfgTicksPerSec
+                0x0010ca24                OSEventEn
+                0x0010ca7c                OSTmrCfgNameSize
+                0x0010ca5e                OSTaskIdleStkSize
+                0x0010ca72                OSTicksPerSec
+                0x0010ca76                OSVersionNbr
+                0x0010ca20                OSEndiannessTest
+                0x0010ca30                OSFlagGrpSize
+                0x0010ca26                OSEventMax
+                0x0010ca5a                OSTaskCreateExtEn
+                0x0010ca54                OSSemEn
+                0x0010ca66                OSTaskStatEn
+                0x0010ca40                OSMemMax
+                0x0010ca1c                OSDebugEn
+                0x0010ca32                OSFlagNodeSize
+                0x0010ca7a                OSTmrCfgMax
+                0x0010ca62                OSTaskMax
+                0x0010ca86                OSTmrWheelSize
+                0x0010ca5c                OSTaskDelEn
+                0x0010ca78                OSTmrEn
+                0x0010ca42                OSMemNameSize
+                0x0010ca6e                OSTCBPrioTblMax
+                0x0010ca6a                OSTaskStatStkChkEn
+                0x0010ca3e                OSMemEn
+                0x0010ca48                OSMutexEn
+                0x0010ca44                OSMemSize
+                0x0010ca46                OSMemTblSize
+                0x0010ca60                OSTaskProfileEn
+                0x0010ca28                OSEventNameSize
+                0x0010ca6c                OSTaskSwHookEn
+                0x0010ca34                OSFlagWidth
+                0x0010ca7e                OSTmrCfgWheelSize
+                0x0010ca58                OSTaskCreateEn
+                0x0010ca84                OSTmrTblSize
+ .rodata        0x0010ca8c       0x22 ucos_ii.a(ucos_tmr.o)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0x0010caae                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x0010daae                . = (0x1000 DATA_SEGMENT_ALIGN 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0010daae        0x0
+                0x0010daae                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x0010daae                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0010daae        0x0
+                0x0010daae                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x0010daae                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0010daae        0x0
+                0x0010daae                PROVIDE (__fini_array_start, .)
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+                0x0010daae                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic
+ *(.dynamic)
+
+.got
+ *(.got)
+                0x0010daae                . = (. DATA_SEGMENT_RELRO_END 0xc)
+
+.got.plt
+ *(.got.plt)
+
+.data           0x0010dac0      0x894
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0010dac0        0x0 boot.o
+ .data          0x0010dac0        0x0 test.o
+ .data          0x0010dac0        0x0 motorTask.o
+ .data          0x0010dac0        0x0 pm511p_IO.o
+ .data          0x0010dac0        0x0 keyboardTask.o
+ .data          0x0010dac0        0x0 pm511p.o
+ .data          0x0010dac0        0xe closeLoop.o
+                0x0010dacc                pidKd
+                0x0010dac0                pidEnabled
+                0x0010dac6                pidLoop
+                0x0010daca                pidKi
+                0x0010dac4                pidSetPoint
+                0x0010dac8                pidKp
+ *fill*         0x0010dace       0x12 00
+ .data          0x0010dae0       0x51 display.o
+                0x0010dae0                space
+ *fill*         0x0010db31        0xf 00
+ .data          0x0010db40       0xc4 scanTask.o
+                0x0010dbf8                scanRangeX
+                0x0010db40                sinArray
+                0x0010dbfc                scanRangeY
+                0x0010dc00                scanPixels
+ .data          0x0010dc04        0x0 commTask.o
+ .data          0x0010dc04        0x2 freqScanTask.o
+ *fill*         0x0010dc06        0x2 00
+ .data          0x0010dc08        0x0 dds_da.o
+ .data          0x0010dc08        0x0 stepResponseTask.o
+ .data          0x0010dc08        0x0 forceCurveTask.o
+ .data          0x0010dc08        0x0 scannerResponseTask.o
+ .data          0x0010dc08        0x0 ucos_ii.a(init_8253.o)
+ .data          0x0010dc08        0x8 ucos_ii.a(init_8259.o)
+                0x0010dc08                IRQ_MASK
+ *fill*         0x0010dc10       0x10 00
+ .data          0x0010dc20       0x86 ucos_ii.a(init_idt.o)
+ *fill*         0x0010dca6        0x2 00
+ .data          0x0010dca8       0x20 ucos_ii.a(Init_CPU.o)
+                0x0010dcc6                code_selector
+ .data          0x0010dcc8        0x9 ucos_ii.a(textMode.o)
+ *fill*         0x0010dcd1        0x3 00
+ .data          0x0010dcd4        0x0 ucos_ii.a(comm_pc.o)
+ .data          0x0010dcd4        0x0 ucos_ii.a(commrtos.o)
+ *fill*         0x0010dcd4        0xc 00
+ .data          0x0010dce0      0x671 ucos_ii.a(i8042_keyboard.o)
+ *fill*         0x0010e351        0x3 00
+ .data          0x0010e354        0x0 ucos_ii.a(ucos_core.o)
+ .data          0x0010e354        0x0 ucos_ii.a(ucos_dbg.o)
+ .data          0x0010e354        0x0 ucos_ii.a(ucos_flag.o)
+ .data          0x0010e354        0x0 ucos_ii.a(ucos_mbox.o)
+ .data          0x0010e354        0x0 ucos_ii.a(ucos_mem.o)
+ .data          0x0010e354        0x0 ucos_ii.a(ucos_q.o)
+ .data          0x0010e354        0x0 ucos_ii.a(ucos_sem.o)
+ .data          0x0010e354        0x0 ucos_ii.a(ucos_task.o)
+ .data          0x0010e354        0x0 ucos_ii.a(ucos_time.o)
+ .data          0x0010e354        0x0 ucos_ii.a(ucos_tmr.o)
+ .data          0x0010e354        0x0 ucos_ii.a(memcpy.o)
+ .data          0x0010e354        0x0 ucos_ii.a(strcpy.o)
+ .data          0x0010e354        0x0 ucos_ii.a(multiboot_info.o)
+ .data          0x0010e354        0x0 ucos_ii.a(os_cpu_c.o)
+
+.data1
+ *(.data1)
+                0x0010e354                _edata = .
+                0x0010e354                PROVIDE (edata, .)
+                0x0010e354                __bss_start = .
+
+.bss            0x0010e360   0x1157a8
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0010e360        0x0 boot.o
+ .bss           0x0010e360        0x0 test.o
+ .bss           0x0010e360        0x4 motorTask.o
+ .bss           0x0010e364        0x5 pm511p_IO.o
+ *fill*         0x0010e369        0x3 00
+ .bss           0x0010e36c        0x1 keyboardTask.o
+ *fill*         0x0010e36d        0x3 00
+ .bss           0x0010e370        0x0 pm511p.o
+ .bss           0x0010e370       0x1a closeLoop.o
+                0x0010e370                pidCounter
+                0x0010e37c                pidADValue
+                0x0010e384                pidErrorOld
+                0x0010e378                pidDiffOld
+                0x0010e374                pidIntegral
+                0x0010e380                pidError
+                0x0010e388                pidZ
+ *fill*         0x0010e38a        0x2 00
+ .bss           0x0010e38c        0x4 display.o
+                0x0010e38c                runTime
+ .bss           0x0010e390       0x22 scanTask.o
+                0x0010e398                scanAngle
+                0x0010e3a6                hcrc_xB
+                0x0010e3ae                hcrc_yB
+                0x0010e3ac                hcrc_yA
+                0x0010e39c                hcMethod
+                0x0010e3b0                currentLine
+                0x0010e3a4                hcrc_xA
+                0x0010e3a2                hctc_xB
+                0x0010e3aa                hctc_yB
+                0x0010e3a0                hctc_xA
+                0x0010e394                scanOffsetY
+                0x0010e3a8                hctc_yA
+                0x0010e390                scanOffsetX
+ *fill*         0x0010e3b2        0x2 00
+ .bss           0x0010e3b4        0x0 commTask.o
+ *fill*         0x0010e3b4        0xc 00
+ .bss           0x0010e3c0      0x820 freqScanTask.o
+ .bss           0x0010ebe0        0x2 dds_da.o
+                0x0010ebe0                controlWord
+ *fill*         0x0010ebe2       0x1e 00
+ .bss           0x0010ec00     0x1008 stepResponseTask.o
+ .bss           0x0010fc08        0x8 forceCurveTask.o
+ *fill*         0x0010fc10       0x10 00
+ .bss           0x0010fc20      0x660 scannerResponseTask.o
+ .bss           0x00110280        0x0 ucos_ii.a(init_8253.o)
+ .bss           0x00110280        0x0 ucos_ii.a(init_8259.o)
+ .bss           0x00110280      0x800 ucos_ii.a(init_idt.o)
+ .bss           0x00110a80        0x2 ucos_ii.a(textMode.o)
+ *fill*         0x00110a82        0x2 00
+ .bss           0x00110a84        0x8 ucos_ii.a(comm_pc.o)
+ .bss           0x00110a8c        0x0 ucos_ii.a(commrtos.o)
+ .bss           0x00110a8c        0xc ucos_ii.a(i8042_keyboard.o)
+ .bss           0x00110a98        0x0 ucos_ii.a(ucos_core.o)
+ .bss           0x00110a98        0x0 ucos_ii.a(ucos_dbg.o)
+ .bss           0x00110a98        0x0 ucos_ii.a(ucos_flag.o)
+ .bss           0x00110a98        0x0 ucos_ii.a(ucos_mbox.o)
+ .bss           0x00110a98        0x0 ucos_ii.a(ucos_mem.o)
+ .bss           0x00110a98        0x0 ucos_ii.a(ucos_q.o)
+ .bss           0x00110a98        0x0 ucos_ii.a(ucos_sem.o)
+ .bss           0x00110a98        0x0 ucos_ii.a(ucos_task.o)
+ .bss           0x00110a98        0x0 ucos_ii.a(ucos_time.o)
+ .bss           0x00110a98        0x0 ucos_ii.a(ucos_tmr.o)
+ .bss           0x00110a98        0x0 ucos_ii.a(memcpy.o)
+ .bss           0x00110a98        0x0 ucos_ii.a(strcpy.o)
+ .bss           0x00110a98        0x8 ucos_ii.a(multiboot_info.o)
+                0x00110a9c                _upper_men_size
+                0x00110a98                _lower_mem_size
+ .bss           0x00110aa0        0x0 ucos_ii.a(os_cpu_c.o)
+ *(COMMON)
+ COMMON         0x00110aa0     0x4000 boot.o
+                0x00110aa0                stack
+ COMMON         0x00114aa0     0x90a4 test.o
+                0x00114aa0                MboxPIDStepResponse
+                0x00114aa4                MboxLineScan
+                0x00114ac0                TaskForceCurveStk
+                0x00115ac0                MboxNormalScan
+                0x00115ae0                TaskScannerResponseStk
+                0x00116ae0                TaskNormalScanStk
+                0x00117ae0                MboxMotor
+                0x00117b00                TaskMotorStk
+                0x00118b00                MboxScannerResponse
+                0x00118b20                TaskUpdateDispStk
+                0x00119b20                TaskFreqScanStk
+                0x0011ab20                TaskLineScanStk
+                0x0011bb20                TaskStepResponseStk
+                0x0011cb20                MboxFreqScan
+                0x0011cb40                TaskStartStk
+                0x0011db40                MboxForceCurve
+ COMMON         0x0011db44        0x4 keyboardTask.o
+                0x0011db44                currentTask
+ COMMON         0x0011db48        0x9 closeLoop.o
+                0x0011db48                MboxCloseLoop
+                0x0011db4c                pidDiff
+                0x0011db50                pidChannel
+ *fill*         0x0011db51        0xf 00
+ COMMON         0x0011db60   0x103020 scanTask.o
+                0x0011db60                errorRetraceBuf
+                0x0011df60                traceBuf
+                0x0011e360                pBuf
+                0x0011e380                hcrc_y
+                0x0011eb80                errorBuf
+                0x0019eb80                hctc_x
+                0x0019f380                hctc_y
+                0x0019fb80                zBuf
+                0x0021fb80                hcrc_x
+                0x00220380                errorTraceBuf
+                0x00220780                retraceBuf
+ COMMON         0x00220b80     0x1000 commTask.o
+                0x00220b80                TaskCommStk
+ COMMON         0x00221b80      0x440 ucos_ii.a(commrtos.o)
+                0x00221b80                Comm2Buf
+                0x00221da0                Comm1Buf
+ COMMON         0x00221fc0       0x30 ucos_ii.a(i8042_keyboard.o)
+                0x00221fc0                keyboard_buf
+ *fill*         0x00221ff0       0x10 00
+ COMMON         0x00222000     0x1b04 ucos_ii.a(ucos_core.o)
+                0x00222000                OSTmrFreeList
+                0x00222020                OSTmrWheelTbl
+                0x00222060                OSLockNesting
+                0x00222064                OSTmrSemSignal
+                0x00222068                OSRunning
+                0x0022206c                OSIdleCtr
+                0x00222070                OSTmrUsed
+                0x00222072                OSPrioHighRdy
+                0x00222080                OSFlagTbl
+                0x00222120                OSTmrTbl
+                0x00222460                OSPrioCur
+                0x00222464                OSTCBList
+                0x00222480                OSMemTbl
+                0x00222540                OSTaskStatStk
+                0x00222740                OSCtxSwCtr
+                0x00222744                OSTmrFree
+                0x00222748                OSIdleCtrMax
+                0x0022274c                OSTCBFreeList
+                0x00222750                OSCPUUsage
+                0x00222751                OSTaskCtr
+                0x00222754                OSMemFreeList
+                0x00222760                OSQTbl
+                0x002227c0                OSTCBHighRdy
+                0x002227c4                OSQFreeList
+                0x002227c8                OSRdyGrp
+                0x002227c9                OSRdyTbl
+                0x002227e0                OSTmrTaskStk
+                0x002229e0                OSEventFreeList
+                0x002229e4                OSIntNesting
+                0x002229e8                OSTCBCur
+                0x002229ec                OSTmrTime
+                0x002229f0                OSTime
+                0x002229f4                OSTmrSem
+                0x00222a00                OSTaskIdleStk
+                0x00222c00                OSEventTbl
+                0x00222ee0                OSTCBTbl
+                0x002239e0                OSFlagFreeList
+                0x002239e4                OSStatRdy
+                0x00223a00                OSTCBPrioTbl
+                0x00223b00                OSIdleCtrRun
+ COMMON         0x00223b04        0x1 ucos_ii.a(os_cpu_c.o)
+                0x00223b04                OSTickDOSCtr
+                0x00223b08                . = ALIGN ((. != 0x0)?0x4:0x1)
+ *fill*         0x00223b05        0x3 00
+                0x00223b08                . = ALIGN (0x4)
+                0x00223b08                . = ALIGN (0x4)
+                0x00223b08                _end = .
+                0x00223b08                PROVIDE (end, .)
+                0x00223b08                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000      0x969
+ *(.comment)
+ .comment       0x00000000       0x49 test.o
+ .comment       0x00000049       0x49 motorTask.o
+ .comment       0x00000092       0x49 pm511p_IO.o
+ .comment       0x000000db       0x49 keyboardTask.o
+ .comment       0x00000124       0x49 pm511p.o
+ .comment       0x0000016d       0x49 closeLoop.o
+ .comment       0x000001b6       0x49 display.o
+ .comment       0x000001ff       0x49 scanTask.o
+ .comment       0x00000248       0x49 commTask.o
+ .comment       0x00000291       0x49 freqScanTask.o
+ .comment       0x000002da       0x49 dds_da.o
+ .comment       0x00000323       0x49 stepResponseTask.o
+ .comment       0x0000036c       0x49 forceCurveTask.o
+ .comment       0x000003b5       0x49 scannerResponseTask.o
+ .comment       0x000003fe       0x49 ucos_ii.a(init_8253.o)
+ .comment       0x00000447       0x49 ucos_ii.a(init_8259.o)
+ .comment       0x00000490       0x49 ucos_ii.a(init_idt.o)
+ .comment       0x000004d9       0x49 ucos_ii.a(textMode.o)
+ .comment       0x00000522       0x49 ucos_ii.a(comm_pc.o)
+ .comment       0x0000056b       0x49 ucos_ii.a(commrtos.o)
+ .comment       0x000005b4       0x49 ucos_ii.a(i8042_keyboard.o)
+ .comment       0x000005fd       0x49 ucos_ii.a(ucos_core.o)
+ .comment       0x00000646       0x49 ucos_ii.a(ucos_dbg.o)
+ .comment       0x0000068f       0x49 ucos_ii.a(ucos_flag.o)
+ .comment       0x000006d8       0x49 ucos_ii.a(ucos_mbox.o)
+ .comment       0x00000721       0x49 ucos_ii.a(ucos_mem.o)
+ .comment       0x0000076a       0x49 ucos_ii.a(ucos_q.o)
+ .comment       0x000007b3       0x49 ucos_ii.a(ucos_sem.o)
+ .comment       0x000007fc       0x49 ucos_ii.a(ucos_task.o)
+ .comment       0x00000845       0x49 ucos_ii.a(ucos_time.o)
+ .comment       0x0000088e       0x49 ucos_ii.a(ucos_tmr.o)
+ .comment       0x000008d7       0x49 ucos_ii.a(multiboot_info.o)
+ .comment       0x00000920       0x49 ucos_ii.a(os_cpu_c.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+OUTPUT(kernel elf32-i386)
